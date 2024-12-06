@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+  </style>
+</head>
+<body>
+  <h1 class="text-center my-5">Dashboard</h1>
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col">
+        <input type="email" name="email" id="std_email" class="p-1" placeholder="Student Email">
+        <br><br>
+        <!-- <select name="attendence" id="" class="p-1">
+          <option value="leave">Leave</option>
+          <option value="present">Present</option>
+          <option value="absent">Absent</option>
+        </select> -->
+
+        <input type="radio" name="attendence" value="leave">Leave
+        <input type="radio" name="attendence" value="present">Present
+        <input type="radio" name="attendence" value="absent">Absent
+<br><br>
+        <button class="btn btn-outline-success" id="markAttendence">Done</button>
+      </div>
+    </div>
+
+    <div class="row bg-warning" id="displayPosts">
+
+    </div>
+  </div>
+
+  <script src="./app.js" type="module"></script>
+  <script src="firebase.js" type="module"></script>
+  <script src="adminPage.js" type="module"></script>
+</body>
+</html>
